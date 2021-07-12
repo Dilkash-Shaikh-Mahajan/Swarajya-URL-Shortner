@@ -16,7 +16,7 @@ import URL from './URL';
 const Home = () => {
 	const [numberOfUrl, setNumberOfUrl] = useState(0);
 	useEffect(() => {
-		let backend = `http://localhost:5786`;
+		let backend = `https://swarajyaurlshortner.herokuapp.com/`;
 		axios
 			.get(`${backend}/getURLData`)
 			.then((data) => {
