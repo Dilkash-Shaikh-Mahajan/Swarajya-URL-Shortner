@@ -87,8 +87,14 @@ const Home = () => {
 							</a>
 						</li>
 					</ul>
-					<p className='text__footer my-1 '>
-						{' '}
+					<p className='text__footer my-2 '>
+						<a
+							href='https://rzp.io/l/UuYENHPrZ'
+							className='btn btn-outline-info'
+							style={{ marginRight: '10px' }}
+							target='_dilkash'>
+							Donate for Server
+						</a>{' '}
 						Copyright &copy;
 						<a
 							className='ml-3 footer__link'

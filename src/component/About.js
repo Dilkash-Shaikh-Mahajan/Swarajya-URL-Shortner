@@ -121,8 +121,14 @@ const About = () => {
 								</a>
 							</li>
 						</ul>
-						<p className=' mt-2 text__footer'>
-							{' '}
+						<p className=' my-2 text__footer'>
+							<a
+								href='https://rzp.io/l/UuYENHPrZ'
+								className='btn btn-outline-info'
+								style={{ marginRight: '10px' }}
+								target='_dilkash'>
+								Donate for Server
+							</a>
 							Copyright &copy;
 							<a
 								className='ml-3 footer__link'

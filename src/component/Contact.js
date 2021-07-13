@@ -254,8 +254,15 @@ const Contact = () => {
 								</a>
 							</li>
 						</ul>
-						<p className='d-flex mt-2 justify-content-center'>
-							{' '}
+						{/* <p className='d-flex mt-2 justify-content-center'> */}
+						<p className=' my-2 text__footer'>
+							<a
+								href='https://rzp.io/l/UuYENHPrZ'
+								className='btn btn-outline-info'
+								style={{ marginRight: '10px' }}
+								target='_dilkash'>
+								Donate for Server
+							</a>{' '}
 							Copyright &copy;
 							<a
 								className='ml-3 footer__link'
