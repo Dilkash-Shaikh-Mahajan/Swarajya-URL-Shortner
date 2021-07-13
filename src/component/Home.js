@@ -16,7 +16,7 @@ import URL from './URL';
 const Home = () => {
 	const [numberOfUrl, setNumberOfUrl] = useState(0);
 	useEffect(() => {
-		let backend = `https://swarajyaus.herokuapp.com/`;
+		let backend = `https://swarajyaus.herokuapp.com`;
 		axios
 			.get(`${backend}/getURLData`)
 			.then((data) => {

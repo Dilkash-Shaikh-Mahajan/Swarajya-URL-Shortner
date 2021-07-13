@@ -10,7 +10,7 @@ const Header = () => {
 	const [copied, setCopied] = useState(false);
 	const [loader, setLoader] = useState(false);
 	const urlCreator = async (e) => {
-		let backend = `https://swarajyaus.herokuapp.com/`;
+		let backend = `https://swarajyaus.herokuapp.com`;
 		e.preventDefault();
 		if (!longURL) {
 			return toast.error('Please Paste The Long URL');
@@ -64,7 +64,7 @@ const Header = () => {
 						Swaraj URL Shortner is Startup Website which deployed by{' '}
 						<a
 							className='font-weight-bold footer__link'
-							href='https://dilkashshaikhmahajan.herokuapp.com/'
+							href='https://dilkashshaikhmahajan.herokuapp.com'
 							target='_dilkash'>
 							{' '}
 							Dilkash Shaikh Mahajan
