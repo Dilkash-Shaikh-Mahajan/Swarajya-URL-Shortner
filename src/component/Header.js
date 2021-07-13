@@ -10,7 +10,7 @@ const Header = () => {
 	const [copied, setCopied] = useState(false);
 	const [loader, setLoader] = useState(false);
 	const urlCreator = async (e) => {
-		let backend = `https://swarajyaurlshortner.herokuapp.com`;
+		let backend = `https://swarajyaus.herokuapp.com/`;
 		e.preventDefault();
 		if (!longURL) {
 			return toast.error('Please Paste The Long URL');

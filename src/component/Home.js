@@ -16,7 +16,7 @@ import URL from './URL';
 const Home = () => {
 	const [numberOfUrl, setNumberOfUrl] = useState(0);
 	useEffect(() => {
-		let backend = `https://swarajyaurlshortner.herokuapp.com`;
+		let backend = `https://swarajyaus.herokuapp.com/`;
 		axios
 			.get(`${backend}/getURLData`)
 			.then((data) => {
@@ -25,18 +25,14 @@ const Home = () => {
 			.catch((err) => {
 				console.log(`ger url data is${err}`);
 			});
-	}, []);
+	}, [numberOfUrl]);
 	return (
 		<div>
 			<>
 				<Header />
 				<Project />
 				<URL numberOfUrl={numberOfUrl} />
-				<GoogleAd
-					slot='9865473776'
-					timeout={1000}
-					classNames='page-top'
-				/>
+
 				<div className='card  shadow my-1 py-2 d-flex justify-content-center'>
 					<ul className='nav mt-1 justify-content-center text-dark'>
 						<li className='nav-item'>
