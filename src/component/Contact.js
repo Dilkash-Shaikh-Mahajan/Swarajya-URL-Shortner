@@ -11,7 +11,7 @@ import {
 	FaLinkedin,
 } from 'react-icons/fa';
 const Contact = () => {
-	const backend = 'https://swarajya-blog-website.herokuapp.com';
+	let backend = `https://swarajyaus.herokuapp.com`;
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [subject, setSubject] = useState('');
@@ -36,10 +36,7 @@ const Contact = () => {
 				message,
 			};
 			// console.log(fileObject);
-			const { data } = await axios.post(
-				`${backend}/setContact`,
-				fileObject,
-			);
+			const { data } = await axios.post(`${backend}/contact`, fileObject);
 			console.log(data);
 			toast.success(data.msg);
 			setloader(false);
