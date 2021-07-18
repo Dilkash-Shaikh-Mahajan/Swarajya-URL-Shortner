@@ -17,6 +17,7 @@ const Home = () => {
 	const [numberOfUrl, setNumberOfUrl] = useState(0);
 	useEffect(() => {
 		let backend = `https://swarajyaus.herokuapp.com`;
+		// let backend = `http://localhost:5786`;
 		axios
 			.get(`${backend}/getURLData`)
 			.then((data) => {

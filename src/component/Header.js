@@ -11,6 +11,7 @@ const Header = () => {
 	const [loader, setLoader] = useState(false);
 	const urlCreator = async (e) => {
 		let backend = `https://swarajyaus.herokuapp.com`;
+		// let backend = `http://localhost:5786`;
 		e.preventDefault();
 		if (!longURL) {
 			return toast.error('Please Paste The Long URL');
@@ -20,6 +21,7 @@ const Header = () => {
 		const { data } = await axios.post(`${backend}/makeUrl`, { longURL });
 
 		setLoader(false);
+		console.log(data);
 		if (data.success) {
 			setShortURL(`${backend}/${data.response.shortURL}`);
 		} else {
